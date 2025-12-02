@@ -33,7 +33,7 @@ const numLikes= document.getElementById("num-likes")
 
 let currentLikes = parseInt(numLikes.textContent.replace(/,/g, ""))
 
-likePost.addEventListener("dbclick", function() {
+likePost.addEventListener("dblclick", function() {
     currentLikes++
     numLikes.textContent = currentLikes.toLocaleString() +" likes"
 })
