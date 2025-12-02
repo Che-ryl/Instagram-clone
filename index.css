@@ -1,5 +1,68 @@
 html, body {
     margin: 0;
     padding: 0;
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    border: 1px solid red;
+    margin: 0;
+}
+
+section{
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-img{
+    height: 60px;
+    padding: 0px 15px;
+}
+.circle-img{
+    border-radius: 50%;
+    height: 40px;
+    padding: 15px 15px;
+}
+
+.feed-section{
+    display: flex;
+    line-height: 5px;
+    border: 1px solid blue;
+}
+
+.post-img{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.icons-section{
+    display:flex;
+}
+
+.icons-img{
+    height: 22px;
+    width: 22px;;
+    padding: 10px 5px;
+    border: 1px solid green ;
+}
+
+.likes-section{
+    text-align: left;
+    margin: 0px;
+    border: 1px solid rgb(212, 130, 193);
+    padding: 0px;
+}
+
+.caption-section{
+    text-align: left;
+    border: 1px solid orange;
+}
+
+.bold-text{
+    font-weight: bold;
+}
