@@ -28,3 +28,12 @@ const posts = [
     }
 ]
 
+const likePost = document.getElementById("like-post")
+const numLikes= document.getElementById("num-likes")
+
+let currentLikes = parseInt(numLikes.textContent.replace(/,/g, ""))
+
+likePost.addEventListener("dbclick", function() {
+    currentLikes++
+    numLikes.textContent = currentLikes.toLocaleString() +" likes"
+})
