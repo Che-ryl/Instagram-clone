@@ -30,10 +30,16 @@ const posts = [
 
 const likePost = document.getElementById("like-post")
 const numLikes= document.getElementById("num-likes")
+const HeartLikePost = document.getElementById("heartlike-post")
 
 let currentLikes = parseInt(numLikes.textContent.replace(/,/g, ""))
 
 likePost.addEventListener("dblclick", function() {
     currentLikes++
     numLikes.textContent = currentLikes.toLocaleString() +" likes"
+})
+
+HeartLikePost.addEventListener("click", function(){
+    currentLikes++
+    numLikes.textContent = currentLikes.toLocaleString() + " likes"
 })
