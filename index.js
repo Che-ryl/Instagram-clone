@@ -30,16 +30,23 @@ const posts = [
 
 const likePost = document.getElementById("like-post")
 const numLikes= document.getElementById("num-likes")
-const HeartLikePost = document.getElementById("heartlike-post")
+const heartLikePost = document.getElementById("heartlike-post")
+let hasLiked = false
 
 let currentLikes = parseInt(numLikes.textContent.replace(/,/g, ""))
 
 likePost.addEventListener("dblclick", function() {
-    currentLikes++
-    numLikes.textContent = currentLikes.toLocaleString() +" likes"
+    if (hasLiked === false) {
+        currentLikes++
+        numLikes.textContent = currentLikes.toLocaleString() +" likes"
+        hasLiked = true
+    }
 })
 
-HeartLikePost.addEventListener("click", function(){
-    currentLikes++
-    numLikes.textContent = currentLikes.toLocaleString() + " likes"
+heartLikePost.addEventListener("click", function(){
+    if (hasLiked === false) {
+        currentLikes++
+        numLikes.textContent = currentLikes.toLocaleString() + " likes"
+        hasLiked = true
+}
 })
